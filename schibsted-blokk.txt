@@ -1,0 +1,26 @@
+[Adblock Plus 2.0]
+! Title: Anti-Muscle Memory Schibsted Blocklist
+! Description: Blokkerer Schibsted sine media-merke som brukar «Pay or Consent»
+! Homepage: https://github.com/mmsge/schibsted-blokk
+! Expires: 7 days
+
+! Norske sidar
+||vg.no^
+||vektklubb.no^
+||aftenposten.no^
+||bt.no^
+||aftenbladet.no^
+||e24.no^
+||tek.no^
+||godt.no^
+||minmote.no^
+||shifter.no^
+||tvguide.no^
+||podme.com^
+
+! Svenske sidar
+||aftonbladet.se^
+||svd.se^
+||omni.se^
+||omniekonomi.se^
+||klart.se^
