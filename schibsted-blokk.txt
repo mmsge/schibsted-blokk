@@ -52,3 +52,22 @@
 ||omniekonomi.se^$document
 ||klart.se^
 ||klart.se^$document
+
+! Sourcepoint Consent Management — belte & seler
+! Sjølv om domene-reglane over dekkjer sub-ressursar på sidene,
+! sikrar desse at "Pay or Consent"-overlayet ikkje kan lastast
+! uansett kvar det blir prøvd henta frå (CMP-en kan flytta seg).
+||sourcepointcmp.bt.no^
+||sourcepointcmp.vg.no^
+||sourcepointcmp.aftenposten.no^
+||sourcepointcmp.e24.no^
+||sourcepointcmp.aftonbladet.se^
+||sourcepointcmp.svd.se^
+||sourcepointcmp.omni.se^
+||cmp.schibsted.com^
+||cmp.aftonbladet.se^
+||privacy-mgmt.com^
+||cdn.privacy-mgmt.com^
+||notice.sp-prod.net^
+||message.sp-prod.net^
+||sourcepoint.mgr.consensu.org^
