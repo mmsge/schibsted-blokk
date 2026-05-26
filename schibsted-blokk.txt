@@ -3,24 +3,28 @@
 ! Description: Blokkerer Schibsted sine media-merke som brukar «Pay or Consent»
 ! Homepage: https://github.com/mmsge/schibsted-blokk
 ! Expires: 7 days
+!
+! $document gjer at sjølve sideforespurnaden blir blokkert, ikkje berre
+! underressursar (CSS/JS/bilete). Utan dette ville HTML-en framleis lasta
+! og artikkelen vore lesbar i råform.
 
 ! Norske sidar
-||vg.no^
-||vektklubb.no^
-||aftenposten.no^
-||bt.no^
-||aftenbladet.no^
-||e24.no^
-||tek.no^
-||godt.no^
-||minmote.no^
-||shifter.no^
-||tvguide.no^
-||podme.com^
+||vg.no^$document
+||vektklubb.no^$document
+||aftenposten.no^$document
+||bt.no^$document
+||aftenbladet.no^$document
+||e24.no^$document
+||tek.no^$document
+||godt.no^$document
+||minmote.no^$document
+||shifter.no^$document
+||tvguide.no^$document
+||podme.com^$document
 
 ! Svenske sidar
-||aftonbladet.se^
-||svd.se^
-||omni.se^
-||omniekonomi.se^
-||klart.se^
+||aftonbladet.se^$document
+||svd.se^$document
+||omni.se^$document
+||omniekonomi.se^$document
+||klart.se^$document
