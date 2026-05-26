@@ -4,27 +4,51 @@
 ! Homepage: https://github.com/mmsge/schibsted-blokk
 ! Expires: 7 days
 !
-! $document gjer at sjølve sideforespurnaden blir blokkert, ikkje berre
-! underressursar (CSS/JS/bilete). Utan dette ville HTML-en framleis lasta
-! og artikkelen vore lesbar i råform.
+! To regelformer per domene:
+!   ||domene^           blokkerer underressursar (CSS/JS/bilete/XHR/...)
+!   ||domene^$document  ber blokkeraren stoppe sjølve sideforespurnaden
+! $document er ein type-avgrensar i ABP-syntaks — den utvidar IKKJE den
+! generelle regelen, men erstattar typesettet. Difor må begge stå.
+!
+! Merk: Mange innebygde blokkerarar (inkl. Vivaldi sin) støttar ikkje
+! å stoppe top-level-navigasjon. Då blir berre underressursane stoppa,
+! og sida lastar i rå HTML. For full blokkering trengst DNS-nivå
+! (Mullvad/NextDNS/AdGuard DNS/Blokada).
 
 ! Norske sidar
+||vg.no^
 ||vg.no^$document
+||vektklubb.no^
 ||vektklubb.no^$document
+||aftenposten.no^
 ||aftenposten.no^$document
+||bt.no^
 ||bt.no^$document
+||aftenbladet.no^
 ||aftenbladet.no^$document
+||e24.no^
 ||e24.no^$document
+||tek.no^
 ||tek.no^$document
+||godt.no^
 ||godt.no^$document
+||minmote.no^
 ||minmote.no^$document
+||shifter.no^
 ||shifter.no^$document
+||tvguide.no^
 ||tvguide.no^$document
+||podme.com^
 ||podme.com^$document
 
 ! Svenske sidar
+||aftonbladet.se^
 ||aftonbladet.se^$document
+||svd.se^
 ||svd.se^$document
+||omni.se^
 ||omni.se^$document
+||omniekonomi.se^
 ||omniekonomi.se^$document
+||klart.se^
 ||klart.se^$document
