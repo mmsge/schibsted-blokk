@@ -1,70 +1,26 @@
-! Title: Schibsted Blokk
-! Description: Blokkerer Schibsted sin "betal eller samtykk"-vegg (Sourcepoint CMP) og betalmur
+[Adblock Plus 2.0]
+! Title: Anti-Muscle Memory Schibsted Blocklist
+! Description: Blokkerer Schibsted sine media-merke som brukar «Pay or Consent»
 ! Homepage: https://github.com/mmsge/schibsted-blokk
-! Expires: 1 day
-! Syntax: Adblock Plus / uBlock Origin (testa i Vivaldi)
+! Expires: 7 days
 
-! ===========================================================
-! 1. Nettverksblokkering — Sourcepoint Consent Management
-! ===========================================================
-! Schibsted leverer samtykke-vegg via Sourcepoint, ofte gjennom
-! ein CNAME-subdomene på sjølve sida (first-party) i tillegg til
-! Sourcepoint sine eigne domene.
-||sourcepointcmp.bt.no^
-||sourcepointcmp.vg.no^
-||sourcepointcmp.aftenposten.no^
-||sourcepointcmp.e24.no^
-||sourcepointcmp.aftonbladet.se^
-||sourcepointcmp.svd.se^
-||sourcepointcmp.omni.se^
-||cmp.schibsted.com^
-||cmp.aftonbladet.se^
-||privacy-mgmt.com^
-||cdn.privacy-mgmt.com^
-||notice.sp-prod.net^
-||message.sp-prod.net^
-||sourcepoint.mgr.consensu.org^
+! Norske sidar
+||vg.no^
+||vektklubb.no^
+||aftenposten.no^
+||bt.no^
+||aftenbladet.no^
+||e24.no^
+||tek.no^
+||godt.no^
+||minmote.no^
+||shifter.no^
+||tvguide.no^
+||podme.com^
 
-! ===========================================================
-! 2. Generelle Sourcepoint-element (skjul overlay + iframe)
-! ===========================================================
-##div[id^="sp_message_container_"]
-##.sp_veil
-##.sp-message-open
-##.message-overlay
-##iframe[src*="privacy-mgmt.com"]
-##iframe[src*="sourcepointcmp"]
-##iframe[id^="sp_message_iframe_"]
-
-! ===========================================================
-! 3. Få tilbake scroll når CMP-en har låst body
-! ===========================================================
-##html.sp-message-open:style(overflow: auto !important; position: static !important;)
-##body.sp-message-open:style(overflow: auto !important; position: static !important;)
-##html:style(overflow: auto !important;)
-##body:style(overflow: auto !important;)
-
-! ===========================================================
-! 4. Betalmur (paywall) på Schibsted-sider
-! ===========================================================
-bt.no##[class*="paywall"]
-bt.no##[class*="Paywall"]
-bt.no##[data-paywall]
-vg.no##[class*="paywall"]
-vg.no##[class*="Paywall"]
-aftenposten.no##[class*="paywall"]
-aftenposten.no##[class*="Paywall"]
-e24.no##[class*="paywall"]
-stavangeraftenblad.no##[class*="paywall"]
-fvn.no##[class*="paywall"]
-bergensavisen.no##[class*="paywall"]
-aftonbladet.se##[class*="paywall"]
-svd.se##[class*="paywall"]
-omni.se##[class*="paywall"]
-
-! ===========================================================
-! 5. "Bli abonnent"-nag og premium-domene
-! ===========================================================
-||premium.bt.no^$third-party
-||premium.vg.no^$third-party
-||premium.aftenposten.no^$third-party
+! Svenske sidar
+||aftonbladet.se^
+||svd.se^
+||omni.se^
+||omniekonomi.se^
+||klart.se^
